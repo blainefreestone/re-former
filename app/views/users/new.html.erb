@@ -1,1 +1,15 @@
-Hello World
+<form action="/users" method="post" accept-charset="UTF-8">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    
+    <label for="username">Username: </label>
+    <input id="username" name="user[username]" type="text" />
+
+    <label for="email">Email: </label>
+    <input id="email" name="user[email]" type="email" />
+
+    <label for="password">Password: </label>
+    <input id="password" name="user[password]" type="password" />
+
+    <input name="commit" type="submit" value="Submit" data-disable-with="Search" />
+</form>
+    
